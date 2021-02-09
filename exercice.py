@@ -47,7 +47,34 @@ def use_continue() -> None:
 
 
 def verify_ages(groups: List[List[int]]) -> List[bool]:
-    return []
+    array = []
+    for group in groups:
+        if len(group) >= 10 or len(group) <= 3:
+            array.append(False)
+            continue
+        temp = False
+        temp2 = False
+
+        for age in group:
+            if age != 25:
+                if age < 18:
+                    array.append(False)
+                    break
+
+                elif age == 50:
+                    temp = True
+
+                elif age > 70:
+                    temp2 = True
+
+                elif temp and temp2:
+                    array.append(False)
+                    break
+
+        # array.append(True)
+        # continue
+        
+    return array
 
 
 def main() -> None:
