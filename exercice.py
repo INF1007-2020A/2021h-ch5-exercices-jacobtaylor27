@@ -18,16 +18,16 @@ def use_prefixes() -> List[str]:
 
 
 def prime_integer_summation() -> int:
-    sum = 0 
-    i = 0
+    sum = 0
     num = 2
-    isPrime = True
-    # while i < 100:
-    #     if isPrime:
-    #         num += 1
-    #         sum += i
-    #     else:
-    #         i += 1
+    val = 1
+    while val <= 100:
+        for i in range(2,num):
+            if num % i == 0 and num != 2: break
+        else:
+            sum += num
+            val += 1
+        num += 1
     return sum
 
 
