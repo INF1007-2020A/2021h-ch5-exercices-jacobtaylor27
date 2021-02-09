@@ -18,18 +18,32 @@ def use_prefixes() -> List[str]:
 
 
 def prime_integer_summation() -> int:
-    sum = 0
-    for i in range(1,101):
-        for j in range()
+    sum = 0 
+    i = 0
+    num = 2
+    isPrime = True
+    # while i < 100:
+    #     if isPrime:
+    #         num += 1
+    #         sum += i
+    #     else:
+    #         i += 1
     return sum
 
 
 def factorial(number: int) -> int:
-    return 0
+    facto = number
+    while number > 1:
+        number -= 1
+        facto *= number
+    return facto
 
 
 def use_continue() -> None:
-    pass
+    for i in range(11):
+        if i == 5:
+            continue
+        print(i)
 
 
 def verify_ages(groups: List[List[int]]) -> List[bool]:
