@@ -23,7 +23,8 @@ def prime_integer_summation() -> int:
     val = 1
     while val <= 100:
         for i in range(2,num):
-            if num % i == 0 and num != 2: break
+            if num % i == 0 and num != 2: 
+                break
         else:
             sum += num
             val += 1
