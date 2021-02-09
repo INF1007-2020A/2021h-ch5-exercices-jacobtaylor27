@@ -52,10 +52,7 @@ def verify_ages(groups: List[List[int]]) -> List[bool]:
         if len(group) >= 10 or len(group) <= 3:
             array.append(False)
             continue
-        mineur = False
-        age25 = False
-        age70 = False
-        age50 = False
+        mineur = age25 = age70 = age50 = False
         group.sort()
 
         for age in group:
